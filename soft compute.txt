@@ -48,6 +48,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 SonarCube Installation in Ubuntu
 
 Step 1: Install PostgreSQL on the Ubuntu workstation.
