@@ -44,78 +44,92 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Eclipse STS is software used to develop web applications using Spring Boot and Java.
-Bugzilla is software used to track bugs (software errors).
 
-STS = Used to CREATE application Bugzilla = Used to FIND and TRACK problems
+Bugzilla is software used to track bugs (software errors)
 
 
-STS → Development Tool Bugzilla → Bug Tracking Tool
-
-Scenario 
-Developer creates app → Tester finds bug → Bugzilla reports → Developer fixes
 
 Installation for Spring Boot STS (Spring Tool Suite)
 
- Method 1 → If you already have Eclipse → Add STS plugin
- Method 2 → Download STS from Chrome → Extract → Open directly
+Method 1: If Eclipse present then just add STS plugin
+Method 2: Download STS from Chrome then open directly
  
- Method 1 — Already Installed Eclipse → Add STS Plugin
+Method 1 :-
+
 Step 1 — Open Eclipse
-Step 2 — Go to Marketplace
- Top menu Click Help Click Eclipse Marketplace
-Step 3 — Search Spring Tools
-In search box type:
-                   Spring Tools
-Step 4 — Install STS
-➡ Find Spring Tools 4➡ Click Install➡ Click Confirm➡ Accept license➡ Click Finish
-Restart Eclipse
-After install:➡ Click Restart Now
- After restart → Eclipse becomes Spring Tool enabled IDE.STS is basically Eclipse + Spring plugins.
+Step 2 — Go to Marketplace -> Click Help then Click Eclipse Marketplace
+Step 3 — Search Spring Tools by typing in searchbar
+Step 4 — Install STS, find spring tools and click install then restart
+After restart, Eclipse becomes a Spring Tool enabled IDE
 
-Method 2 — Install STS Directly (From Chrome Download)
-Step 1 — Open Chrome
-Search:
-                   Spring Tool Suite download
-Step 2 — Download STS
-Go to Spring tools website → Download Windows version.
-STS standalone is full IDE package. 
-Step 3 — Extract Zip File
-After download:➡ Right click ZIP➡ Click Extract Here or Extract All
-Step 4 — Open STS
-Go inside extracted folder➡ Double click:
-STS.exe  OR  eclipse.exe
-When STS opens → Installation is done.Running executable after unzip verifies installation.
-Install Eclipse or STS
-Create Spring Boot Project
-Run project on server (8080)
-Use Bugzilla to track errors or bugs
-Developers fix bug → Update in Bugzilla
+Method 2 :— 
+Step 1 — Open chrome and search for 'Spring Tool Suite download'
+Step 2 — Download STS by going to the spring tools website and clicking download for compatible version
+         The STS alone is a full IDE package 
+Step 3 — Extract the zip file
+Step 4 — Open STS by clicking on STS.exe or eclipse.exe and when STS opens, installation process is done
 
-Step 1: Open Eclipse STS
-Launch Spring Tool Suite
-Select workspace
-Click Launch
-Step 2: Create Spring Boot Project
-Click File → New → Spring Starter Project
-Enter:
-Project Name: demo6
+
+Creating Spring Boot project on Eclipse
+
+Step 1: Open Eclipse STS and launch Spring Tool Suite, then select workspace and click launch
+Step 2: Create Spring Boot Project by click file, then new, then Spring Starter Project
+
+Here enter this information:
+Project Name: demmo
 Type: Maven
 Java Version: 17
-Click Next
-Select:☑ Spring Web
-Click Finish
- STS creates project structure automatically.
+Click next then select Spring Web and click finish
 
-Step 3: Create Controller
+Step 3: Create the Controller
+
 In Package Explorer:
-src/main/java → com.example.demo
-Right-click package → New → Class
+src/main/java -> com.example.demo
+Right-click package -> New -> Class
 Class Name: HomeController
-Click Finish
+and click finish
 
 Step 4: Write Code
-Paste this code:
 
 package com.example.demo;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -128,53 +142,56 @@ public class HomeController {
     }
 }
 
-Save file (Ctrl + S)
-
-Step 5: Run Application
-Right-click Demo6Application.java
-Click Run As → Spring Boot App
- Step 6: Verify Output
-Open browser and type:
-http://localhost:8080
+Step 5: Run Application as Spring Boot App
+Step 6: Verify Output by going to http://localhost:8080
 Output:
 Application Running Successfully
 Application developed successfully using Eclipse STS
 
 
 BUGZILLA (BUG TRACKING)
- Bugzilla is NOT inside STSIt is a web-based tool.
-Step 7: Open Bugzilla
-Open browser
-Go to Bugzilla site (https://bugzilla.mozilla.org)
-Now you will see: Login pageOR Bugzilla dashboard
-That means Bugzilla opened successfully.
- Step 8: Login / Create Account
-Click Create Account
-Enter email & password
-Login to Bugzilla dashboard
 
-Step 9: Create New Bug
-Click File a Bug
-Select Product (Web Application)
-Enter details:
-Summary:
-Home page not loading properly
-Description:
-Application home page is not displaying expected output.
-Steps to Reproduce:
-Open browser
-Enter localhost:8080
-Page shows incorrect output
-Expected Result:Page should show correct message
-Actual Result:Incorrect output shown
+Bugzilla is not inside STS as it is a web-based tool
+
+Step 7: Open Bugzilla - Open browser then go to Bugzilla site (https://bugzilla.mozilla.org)
+
+Step 8: Login/Create Account to login to Bugzilla dashboard
+
+Step 9: Create New Bug - Click file a bug then select product (web application)
+
+Enter these details:
+
+Summary: Home page not loading properly
+Description: Application home page is not displaying expected output
+Steps to Reproduce: Open browser, Enter localhost:8080, Page shows incorrect output
+Expected Result: Page should show correct message
+Actual Result: Incorrect output shown
 Select Severity
-Click Submit Bug
+
+Then click on submit bug
 
 Step 10: Bug ID Generated
 
 Bugzilla generates Bug ID:
 Bug #101
-✔ Bug successfully recorded
+and message 'Bug successfully recorded'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Scenario: Online Banking Application
 
